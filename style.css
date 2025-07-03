@@ -34,6 +34,7 @@ section {
 
 .container {
     padding: 50px 0;
+    width: 100%;
 }
 
 .row {
@@ -115,7 +116,7 @@ height: 70px;
 font-size: 32px;
 border-radius: 50%;
 border: none;
-background-color: #242424;
+background-color: #97205ca6;
 color: white;
 position: absolute;
 bottom: 32px;
@@ -220,6 +221,7 @@ PROJECTS
     border-radius: 20px;
     box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
     overflow: hidden;
+    margin-bottom: 40px;
 }
 
 .project__wrapper:hover .project__description {
@@ -227,7 +229,7 @@ PROJECTS
     transform: translateY(-50%);
 }
 
-.project__wrapper .project__img {
+.project__wrapper:hover .project__img {
     transform: scale(1.07);
     filter: blur(5px);
 }
@@ -274,4 +276,44 @@ PROJECTS
 
 .project__description--para {
     margin: 16px 0;
+}
+
+/* 
+
+Footer
+
+*/
+
+footer {
+    background-color: #97205ca6;
+    display: flex;
+    padding: 6% 0;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo--img {
+    width: 200px;
+    border: 5px dotted rgb(245, 245, 245);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    margin-bottom: 28px;
+    
+}
+.footer__social--list {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 28px;
+
+}
+
+.footer__social--link,
+.footer__copyright {
+    color: white;
 }
