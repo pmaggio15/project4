@@ -1,6 +1,16 @@
-// template_yvmnzs9
-// service_aou6bn7
-//CI_FwyBFaqAfQM_CS
+let isModalOpen = false;
+let contrastToggle = false;
+
+
+function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList += " dark-theme"
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+    }
+}
 
  function contact(event) {
     event.preventDefault();
@@ -25,17 +35,6 @@
     })
 }
 
-
-// let isModalOpen = false; 
-// function toggleModal() {
-//     if (ismodalOpen) {
-//         return document.body.classList.remove("modal--open");
-//     }
-//     isModalOpen = !isModalOpen;
-//     document.body.classList += " modal--open";
-// }
-
-let isModalOpen = false;
 function toggleModal() {
     if (isModalOpen) {
         isModalOpen = false;
