@@ -26,11 +26,21 @@
 }
 
 
-let isModalOpen = false; 
+// let isModalOpen = false; 
+// function toggleModal() {
+//     if (ismodalOpen) {
+//         return document.body.classList.remove("modal--open");
+//     }
+//     isModalOpen = !isModalOpen;
+//     document.body.classList += " modal--open";
+// }
+
+let isModalOpen = false;
 function toggleModal() {
-    if (ismodalOpen) {
+    if (isModalOpen) {
+        isModalOpen = false;
         return document.body.classList.remove("modal--open");
     }
-    isModalOpen = !isModalOpen;
+    isModalOpen = true;
     document.body.classList += " modal--open";
 }
