@@ -9,6 +9,9 @@
 li {
     list-style-type: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 p {
     line-height: 1.5;
@@ -95,7 +98,7 @@ transform: scale(.8);
 }
 
 .title {
-    font-size: 132px;
+    font-size: 116px;
     margin-bottom: 12px;
     text-align: left;
     line-height: 1;
@@ -208,7 +211,13 @@ LANDING PAGE
     line-height: 2;
     max-width: 500px;
 }
-
+.hello  {
+    display: flex;
+    height: 150px;
+    width: 400px;
+    margin-bottom: -20px;
+    
+}
 .social__list {
     margin-top: 16px;
     display: flex;
@@ -234,7 +243,7 @@ border-radius: 50%;
 border: none;
 background-color: #97205ca6;
 color: white;
-position: absolute;
+position: fixed;
 bottom: 32px;
 right: 40px;
 }
@@ -727,5 +736,9 @@ SHAPES
     }
     .modal__half {
         padding: 40px;
+    }
+    .hello {
+        max-width: 100%;
+        height: auto;
     }
 }
